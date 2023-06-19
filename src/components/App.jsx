@@ -1,5 +1,4 @@
 import { AppContainer } from "./App.styled";
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "pages/Home";
 import Movies from "pages/Movies";
