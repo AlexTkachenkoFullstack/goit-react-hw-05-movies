@@ -24,7 +24,7 @@ const Cast = () => {
         getCast()
     },[id])
     
-    
+    console.log(error, isLoading)
     return (
         <ul>
             {cast?.map(item => 

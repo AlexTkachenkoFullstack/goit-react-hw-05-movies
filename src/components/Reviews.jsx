@@ -32,7 +32,8 @@ const Reviews = () => {
         }
         fetchReviews()
     }, [id])
-    
+    console.log(error, isLoading)
+
     if (isEmpty) {
         return <p>We don't have any reviews for this movie</p>
     }

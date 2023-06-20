@@ -21,7 +21,7 @@ const MoviesList = () => {
         }
         fetchMovies()
     }, [])
-
+console.log(error, isLoading)
     return (
         <ul>
             {movies?.map(item => {

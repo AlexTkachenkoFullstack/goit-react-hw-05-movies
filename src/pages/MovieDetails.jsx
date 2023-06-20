@@ -22,6 +22,8 @@ const MovieDetails = () => {
       fetchMovieDetails()
     },[id])
     
+console.log(error)
+
     return (
         <div>
             <div >
