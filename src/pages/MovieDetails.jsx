@@ -28,9 +28,7 @@ console.log(error)
         <div>
             <div >
                     <ImgContainer>
-                    <ImgEl src={ movieInfo.poster_path 
-                            ? `https://image.tmdb.org/t/p/w300/${movieInfo.poster_path}`
-                            : process.env.PUBLIC_URL+ 'Img_empty.png'
+                    <ImgEl src={`https://image.tmdb.org/t/p/w300/${movieInfo.poster_path}`
                             }
                             alt={movieInfo.title || movieInfo.name} />
                     </ImgContainer>
