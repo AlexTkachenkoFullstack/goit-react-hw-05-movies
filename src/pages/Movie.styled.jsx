@@ -9,7 +9,7 @@ min-height: calc(100vh - 60px);
 
 export const MoviesContainer = styled.div`
 background-image:url(${bgBody});
-    background-position: center;
+    background-position: center top;
     background-repeat: repeat;
     background-size: contain;
     padding-top: 15px;

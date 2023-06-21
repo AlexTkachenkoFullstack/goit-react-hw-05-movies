@@ -26,3 +26,11 @@ font-size: 32px;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
     `
+
+    
+export const LoaderContainer = styled.div`
+position: absolute;
+left: 50%;
+top: 150px;
+transform: translateX(-50%);
+`

@@ -2,11 +2,13 @@ import { getMovieReviews } from "services/services"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ReviewItem from "../ReviewItem/ReviewItem"
-import { ReviewList } from "./Reviews.styled"
+import { ReviewList, ReviewsEmpty, ErrorMessage } from "./Reviews.styled"
+
 const Reviews = () => {
     const [reviews, setReviews] = useState([])
     const [error, setError] = useState(null)
-    const [isEmpty, setIsEmpty]= useState(false)
+    const [isEmpty, setIsEmpty] = useState(false)
+  
     
     const { id } = useParams()
     
@@ -17,6 +19,7 @@ const Reviews = () => {
         setIsEmpty(false)
         const fetchReviews = async () => {
             try {
+            
                 const data = await getMovieReviews(id);
                 if (data.length === 0) {
                     setIsEmpty(true)
@@ -25,18 +28,19 @@ const Reviews = () => {
                 setReviews(data)
             } catch (error) {
                 setError(error)
-            } 
+            }
         }
         fetchReviews()
     }, [id])
    
+    
 
     if (isEmpty) {
-        return <p>We don't have any reviews for this movie</p>
+        return <ReviewsEmpty>We don't have any reviews for this movie</ReviewsEmpty>
     }
 
     if (error) {
-        return <p>Sorry, there are some problems. Try to come back a little later.</p>
+        return <ErrorMessage>Sorry, there are some problems. Try to come back a little later.</ErrorMessage>
     }
     
     return (

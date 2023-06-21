@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { Suspense } from "react"
 import Loader from "components/Loader/Loader"
-import { Header, HeaderContaner, Link } from "./SharedLayout.styled"
+import { Header, HeaderContaner, Link, LoaderContainer } from "./SharedLayout.styled"
 const SharedLayout = () => {
     return (<>
         <Header >
@@ -10,7 +10,7 @@ const SharedLayout = () => {
                 <Link to='/movies'>Movies</Link>
             </HeaderContaner>    
         </Header>
-            <Suspense fallback={<Loader/>}>
+            <Suspense fallback={<LoaderContainer><Loader/></LoaderContainer>}>
                 <Outlet/>
             </Suspense>
             

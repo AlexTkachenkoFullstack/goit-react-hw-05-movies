@@ -6,7 +6,7 @@ import emptyImg from './/..//images/Img_empty.png'
 import { Link } from "react-router-dom"
 import Loader from "components/Loader/Loader"
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { MovieDitailsContainer, ErrorMessage, IconContainer, MovieDetailsText,LinkEl, MovieDetailsLinkContainer, MovieDetailsButton,MovieDetailsTitle, MovieDetailsH3, MovieDitailsSection, MovieDetailsImg } from "./MovieDetails.styled"
+import { MovieDitailsContainer, ErrorMessage, IconContainer, MovieDetailsText,LinkEl, MovieDetailsLinkContainer, MovieDetailsButton,MovieDetailsTitle, MovieDetailsH3, MovieDitailsSection, MovieDetailsImg, LoaderContainer } from "./MovieDetails.styled"
 
 
 const MovieDetails = () => {
@@ -55,8 +55,8 @@ const MovieDetails = () => {
                                         <MovieDetailsText> {movieInfo.overview}</MovieDetailsText>
                                         <MovieDetailsH3>Genres</MovieDetailsH3>
                                         <MovieDetailsText>{movieInfo.genres?.map(item=>item.name).join(' ')}</MovieDetailsText>
-                        </div>
-                        </div>
+                                    </div>
+                                 </div>
                                 
                                 <MovieDetailsH3>Addition information</MovieDetailsH3>
                                 <MovieDetailsLinkContainer>
@@ -73,7 +73,7 @@ const MovieDetails = () => {
                                         Reviews
                                     </LinkEl>
                                 </MovieDetailsLinkContainer>
-                                <Suspense fallback={<Loader/>}>
+                                <Suspense fallback={<LoaderContainer><Loader/></LoaderContainer>}>
                                     <Outlet />
                                 </Suspense>
                                  </>   )}
