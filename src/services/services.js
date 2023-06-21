@@ -14,16 +14,10 @@ export  const  getTrending=async()=>{
         return response.data.results
   }
 
-// export  const  getSearchMovies=async()=>{
-//     try {
-//         const response = await axios.get('search/movie?', options)
-    
-//         return response
-//   }
-//   catch (error) {
-//     console.log(error);
-//   }
-// }
+export  const  getSearchMovies=async(query)=>{
+        const response = await axios.get(`search/movie?query=${query}`, options)
+  return response.data.results
+}
 
 export  const  getMovieDetails=async(id)=>{
         const response = await axios.get(`movie/${id}?`, options)
