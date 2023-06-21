@@ -94,4 +94,5 @@ position: absolute;
 export const LoaderContainer = styled.div`
 position: absolute;
 left: 50%;
+ transform: translateX(-50%);
 `
