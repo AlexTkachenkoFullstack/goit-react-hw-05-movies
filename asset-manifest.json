@@ -1,13 +1,27 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.b5320759.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.20d6cb97.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.bee226cf.js",
+    "static/js/415.ec9ab759.chunk.js": "/goit-react-hw-05-movies/static/js/415.ec9ab759.chunk.js",
+    "static/js/149.8246b320.chunk.js": "/goit-react-hw-05-movies/static/js/149.8246b320.chunk.js",
+    "static/js/146.22c1cb70.chunk.js": "/goit-react-hw-05-movies/static/js/146.22c1cb70.chunk.js",
+    "static/js/887.89a2df77.chunk.js": "/goit-react-hw-05-movies/static/js/887.89a2df77.chunk.js",
+    "static/js/76.bec67ce9.chunk.js": "/goit-react-hw-05-movies/static/js/76.bec67ce9.chunk.js",
+    "static/js/279.1e3b90eb.chunk.js": "/goit-react-hw-05-movies/static/js/279.1e3b90eb.chunk.js",
+    "static/js/861.895e8448.chunk.js": "/goit-react-hw-05-movies/static/js/861.895e8448.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.b5320759.css.map": "/goit-react-hw-05-movies/static/css/main.b5320759.css.map",
-    "main.20d6cb97.js.map": "/goit-react-hw-05-movies/static/js/main.20d6cb97.js.map"
+    "main.bee226cf.js.map": "/goit-react-hw-05-movies/static/js/main.bee226cf.js.map",
+    "415.ec9ab759.chunk.js.map": "/goit-react-hw-05-movies/static/js/415.ec9ab759.chunk.js.map",
+    "149.8246b320.chunk.js.map": "/goit-react-hw-05-movies/static/js/149.8246b320.chunk.js.map",
+    "146.22c1cb70.chunk.js.map": "/goit-react-hw-05-movies/static/js/146.22c1cb70.chunk.js.map",
+    "887.89a2df77.chunk.js.map": "/goit-react-hw-05-movies/static/js/887.89a2df77.chunk.js.map",
+    "76.bec67ce9.chunk.js.map": "/goit-react-hw-05-movies/static/js/76.bec67ce9.chunk.js.map",
+    "279.1e3b90eb.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.1e3b90eb.chunk.js.map",
+    "861.895e8448.chunk.js.map": "/goit-react-hw-05-movies/static/js/861.895e8448.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5320759.css",
-    "static/js/main.20d6cb97.js"
+    "static/js/main.bee226cf.js"
   ]
 }
