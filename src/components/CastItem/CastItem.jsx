@@ -1,5 +1,6 @@
 
 import { TbPhotoOff } from "react-icons/tb";
+import { CastText, CastName} from "./CastItem.styled";
 
 const CastItem = ({ name, character, photo }) => {
    
@@ -9,9 +10,9 @@ const CastItem = ({ name, character, photo }) => {
         <li>
             {photo
                 ? <img src={`https://image.tmdb.org/t/p/w200/${photo}`} alt={name} />
-            : <TbPhotoOff style={{height:150, width: 150}}/>}
-            <p>{name}</p>
-            <p>Character: {character}</p>
+            : <TbPhotoOff style={{height:300, width: 200}}/>}
+            <CastName>{name}</CastName>
+            <CastText>Character: {character}</CastText>
         </li>
     )
 }

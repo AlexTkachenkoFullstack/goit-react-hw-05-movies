@@ -1,19 +1,28 @@
-const SearchForm = ({onSubmit, value}) => {
+import PropTypes from 'prop-types';
+
+import { SearchInput, SearchFormEl, SearchButton, SearchIcon} from './SearchForm.styled';
+
+const SearchForm = ({ onSubmit, value }) => {
    
     const handleSubmit = (e) => {
         e.preventDefault()
-        onSubmit(e.target.elements.inputQuery.value)
+        onSubmit(e.target.elements.inputQuery.value.trim())
         e.target.elements.inputQuery.value=''
 }
     
     return (
-        <form onSubmit={handleSubmit}>
+        <SearchFormEl onSubmit={handleSubmit}>
                 <label>
-                    <input name='inputQuery' type="text" value={value} placeholder="Enter your request"/>
+                    <SearchInput name='inputQuery' type="text" placeholder="Enter your request"/>
                 </label>
-                <button type="submit">Search</button>
-        </form>
+                <SearchButton type="submit"><SearchIcon /></SearchButton>
+        </SearchFormEl>
     )
 }
 
 export default SearchForm
+
+SearchForm.propTypes = {
+    onSubmit: PropTypes.func,
+    value:PropTypes.string
+}

@@ -2,6 +2,7 @@ import { getMovieCast } from "services/services"
 import CastItem from "components/CastItem/CastItem"
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import { CastList } from "./Cast.styled"
 const Cast = () => {
     const [cast, setCast] = useState([])
     const [error, setError] = useState(null)
@@ -35,7 +36,7 @@ const Cast = () => {
     }
 
     return (
-                <ul>
+                <CastList>
                     {cast?.map(item => 
                         (<CastItem key={item.id}
                             name={item.name}
@@ -43,7 +44,7 @@ const Cast = () => {
                             photo={item.profile_path}
                         />)
                     )}
-                </ul>
+                </CastList>
             
         
     )

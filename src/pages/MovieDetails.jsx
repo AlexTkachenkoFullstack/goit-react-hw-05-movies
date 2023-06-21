@@ -5,6 +5,8 @@ import { getMovieDetails } from "services/services"
 import emptyImg from './/..//images/Img_empty.png'
 import { Link } from "react-router-dom"
 import Loader from "components/Loader/Loader"
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { MovieDitailsContainer, ErrorMessage, IconContainer, MovieDetailsText,LinkEl, MovieDetailsLinkContainer, MovieDetailsButton,MovieDetailsTitle, MovieDetailsH3, MovieDitailsSection, MovieDetailsImg } from "./MovieDetails.styled"
 
 
 const MovieDetails = () => {
@@ -31,37 +33,52 @@ const MovieDetails = () => {
     
   
     return (
-        <div>
-           
-            {error && <div>{error}</div>}
-            {movieInfo && (<section>
-                                <div >
-                                
+        <MovieDitailsSection>
+            <MovieDitailsContainer className="container" >
+                {error && (<ErrorMessage>
+                                    <p>There were errors on the server.</p>
+                                    <p> We will try to resolve this issue as soon as possible.</p>
+                            </ErrorMessage>)}
+                {movieInfo && (<>
+                                 <div>
                                     <Link to={backLinkHref.current}>
-                                        <button>Go Back</button>
+                                        <MovieDetailsButton>Go Back</MovieDetailsButton>
                                     </Link>
                                     {movieInfo.poster_path
-                                    ? <img src={`https://image.tmdb.org/t/p/w300/${movieInfo.poster_path}`}
+                                    ? <MovieDetailsImg src={`https://image.tmdb.org/t/p/w300/${movieInfo.poster_path}`}
                                                 alt={movieInfo.title || movieInfo.name} />
-                                    : <img src={emptyImg} alt='there are no any img' width={150}/>}           
+                                    : <MovieDetailsImg src={emptyImg} alt='there are no any img' width={150}/>}           
                                     <div>
-                                        <h3>{movieInfo.title || movieInfo.name}</h3>
-                                        <h4>User Score: {Math.round(movieInfo.vote_average * 10)} %</h4>
-                                        <h4> Overview </h4>
-                                        <p> {movieInfo.overview}</p>
-                                        <h4>Genres</h4>
-                                        <p>{movieInfo.genres?.map(item=>item.name).join(' ')}</p>
-                                    </div>
-                                </div>
-                                <h4>Addition information</h4>
-                                <Link to="cast">Cast</Link>
-                                <Link to="reviews">Reviews</Link>
+                                        <MovieDetailsTitle>{movieInfo.title || movieInfo.name}</MovieDetailsTitle>
+                                        <MovieDetailsText><span>User Score:</span> {Math.round(movieInfo.vote_average * 10)} %</MovieDetailsText>
+                                        <MovieDetailsH3> Overview </MovieDetailsH3>
+                                        <MovieDetailsText> {movieInfo.overview}</MovieDetailsText>
+                                        <MovieDetailsH3>Genres</MovieDetailsH3>
+                                        <MovieDetailsText>{movieInfo.genres?.map(item=>item.name).join(' ')}</MovieDetailsText>
+                        </div>
+                        </div>
+                                
+                                <MovieDetailsH3>Addition information</MovieDetailsH3>
+                                <MovieDetailsLinkContainer>
+                                    <LinkEl to="cast">
+                                        <IconContainer>
+                                            <HiArrowNarrowRight/>
+                                        </IconContainer>
+                                        Cast
+                                    </LinkEl>
+                                    <LinkEl to="reviews">
+                                        <IconContainer>
+                                            <HiArrowNarrowRight/>
+                                        </IconContainer>
+                                        Reviews
+                                    </LinkEl>
+                                </MovieDetailsLinkContainer>
                                 <Suspense fallback={<Loader/>}>
                                     <Outlet />
                                 </Suspense>
-                                    
-                            </section>)}
-        </div>
+                                 </>   )}
+            </MovieDitailsContainer>
+         </MovieDitailsSection>
     )
 }
 

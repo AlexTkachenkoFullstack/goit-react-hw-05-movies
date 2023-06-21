@@ -2,6 +2,7 @@ import { getMovieReviews } from "services/services"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ReviewItem from "../ReviewItem/ReviewItem"
+import { ReviewList } from "./Reviews.styled"
 const Reviews = () => {
     const [reviews, setReviews] = useState([])
     const [error, setError] = useState(null)
@@ -39,12 +40,12 @@ const Reviews = () => {
     }
     
     return (
-        <ul>
+        <ReviewList>
             {reviews?.map(item => <ReviewItem key={item.id}
                                              author={item.author}
                                              content={item.content}
                                              />)}
-        </ul>
+        </ReviewList>
     )
 }
 
