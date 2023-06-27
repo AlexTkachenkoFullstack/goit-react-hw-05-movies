@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom"
 import { useState, useEffect,useRef, Suspense } from "react"
 import { useParams, useLocation} from "react-router-dom"
 import { getMovieDetails } from "services/services"
-import emptyImg from './/..//images/Img_empty.png'
+import emptyImg from './/..//..//images/Img_empty.png'
 import { Link } from "react-router-dom"
 import Loader from "components/Loader/Loader"
 import { HiArrowNarrowRight } from "react-icons/hi";
