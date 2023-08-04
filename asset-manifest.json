@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/movie-mania/static/css/main.d4cd3b1f.css",
-    "main.js": "/movie-mania/static/js/main.9a6f0fa9.js",
+    "main.js": "/movie-mania/static/js/main.4ace3cea.js",
     "static/js/597.4a0f8360.chunk.js": "/movie-mania/static/js/597.4a0f8360.chunk.js",
     "static/js/118.e9b41d69.chunk.js": "/movie-mania/static/js/118.e9b41d69.chunk.js",
-    "static/js/347.8c9767e1.chunk.js": "/movie-mania/static/js/347.8c9767e1.chunk.js",
+    "static/js/347.768a72e9.chunk.js": "/movie-mania/static/js/347.768a72e9.chunk.js",
     "static/js/758.4f9f778e.chunk.js": "/movie-mania/static/js/758.4f9f778e.chunk.js",
     "static/js/843.0ceee795.chunk.js": "/movie-mania/static/js/843.0ceee795.chunk.js",
     "static/js/279.cf633675.chunk.js": "/movie-mania/static/js/279.cf633675.chunk.js",
@@ -15,10 +15,10 @@
     "static/media/abstraktsiia-tsvetochnaia-fantaziia-fraktalnyi-fon-zimnii-uz.jpg": "/movie-mania/static/media/abstraktsiia-tsvetochnaia-fantaziia-fraktalnyi-fon-zimnii-uz.065798b87280ef235aa6.jpg",
     "index.html": "/movie-mania/index.html",
     "main.d4cd3b1f.css.map": "/movie-mania/static/css/main.d4cd3b1f.css.map",
-    "main.9a6f0fa9.js.map": "/movie-mania/static/js/main.9a6f0fa9.js.map",
+    "main.4ace3cea.js.map": "/movie-mania/static/js/main.4ace3cea.js.map",
     "597.4a0f8360.chunk.js.map": "/movie-mania/static/js/597.4a0f8360.chunk.js.map",
     "118.e9b41d69.chunk.js.map": "/movie-mania/static/js/118.e9b41d69.chunk.js.map",
-    "347.8c9767e1.chunk.js.map": "/movie-mania/static/js/347.8c9767e1.chunk.js.map",
+    "347.768a72e9.chunk.js.map": "/movie-mania/static/js/347.768a72e9.chunk.js.map",
     "758.4f9f778e.chunk.js.map": "/movie-mania/static/js/758.4f9f778e.chunk.js.map",
     "843.0ceee795.chunk.js.map": "/movie-mania/static/js/843.0ceee795.chunk.js.map",
     "279.cf633675.chunk.js.map": "/movie-mania/static/js/279.cf633675.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.d4cd3b1f.css",
-    "static/js/main.9a6f0fa9.js"
+    "static/js/main.4ace3cea.js"
   ]
 }
