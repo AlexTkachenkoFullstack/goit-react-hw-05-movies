@@ -151,6 +151,7 @@ font-weight: 600;
 `
 
 export const IconContainer = styled.div`
+margin-right: 5px;
 width:32px;
 `
 
