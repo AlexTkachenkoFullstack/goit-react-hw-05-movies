@@ -6,7 +6,7 @@ import emptyImg from './/..//..//images/Img_empty.png'
 import { Link } from "react-router-dom"
 import Loader from "components/Loader/Loader"
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { MovieDitailsContainer, ErrorMessage, IconContainer, MovieDetailsText,LinkEl, MovieDetailsLinkContainer, MovieDetailsButton,MovieDetailsTitle, MovieDetailsH3, MovieDitailsSection, MovieDetailsImg, LoaderContainer } from "./MovieDetails.styled"
+import { MovieDitailsContainer, ErrorMessage, IconContainer, MovieDetailsText,LinkEl, MovieDetailsLinkContainer, MovieDetailsButton,MovieDetailsTitle, MovieDetailsH3, MovieDitailsSection, MovieDetailsImg, LoaderContainer, GoBackButton, GoBackIcon } from "./MovieDetails.styled"
 
 
 const MovieDetails = () => {
@@ -42,7 +42,10 @@ const MovieDetails = () => {
                 {movieInfo && (<>
                                  <div>
                                     <Link to={backLinkHref.current}>
-                                        <MovieDetailsButton>Go Back</MovieDetailsButton>
+                                        <GoBackButton>  
+                                            <GoBackIcon />
+                                            Go Back
+                                            </GoBackButton>
                                     </Link>
                                     {movieInfo.poster_path
                                     ? <MovieDetailsImg src={`https://image.tmdb.org/t/p/w300/${movieInfo.poster_path}`}

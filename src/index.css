@@ -91,7 +91,7 @@ img {
 @media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }

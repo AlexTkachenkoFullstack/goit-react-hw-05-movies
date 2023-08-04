@@ -1,18 +1,13 @@
-import { styled } from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
-
-export const IconContainer = styled.div`
-width: 24px;
-height: 24px;
-`
-export const Link = styled(NavLink)`
+export const HomeItem = styled(NavLink)`
   color: #e6e6e6;
   margin: 0;
   text-decoration: none;
-`
+`;
 
-export const MoviesListComp = styled.ul`
+export const TrendingList = styled.ul`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -20,23 +15,22 @@ export const MoviesListComp = styled.ul`
   row-gap: 32px;
   list-style: none;
   flex-bacis: 24%;
-`
+`;
 
-export const MoviesItem = styled.li`
+export const TrendingLi = styled.li`
   max-width: 264px;
-`
+`;
 
-export const MovieImg = styled.img`
+export const TrendingImg = styled.img`
   border-radius: 5px;
   margin-bottom: 5px;
-  height:384px;
   background: var(
     --linear,
     linear-gradient(180deg, rgba(0, 0, 0, 0) 63.48%, rgba(0, 0, 0, 0.9) 92.16%)
-  )
-`
+  );
+`;
 
-export const MovieName = styled.p`
+export const TrendingName = styled.p`
   color: #e5e5e5;
   font-size: 20px;
   font-weight: 600;
@@ -50,7 +44,7 @@ export const MovieName = styled.p`
 @media screen and (min-width: 1440px){
     font-size: 28px;
 }
-`
+`;
 
 export const UserScore=styled.p`
 color: #c2c239;;
@@ -64,13 +58,3 @@ color: #c2c239;;
     font-size: 24px;
 }
 `
-
-
-
-
-
-
-
-
-
-
